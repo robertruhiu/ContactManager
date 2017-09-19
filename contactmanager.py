@@ -46,7 +46,7 @@ def delete_contact(name):  # function to delete an item in contact list
     print()
 
 
-contactList = []  # to store the values of the contact info
+contactList = []  # to store the values of the contact infomation
 choice = menu_choices()
 while choice != "5":
     if choice == "1":
