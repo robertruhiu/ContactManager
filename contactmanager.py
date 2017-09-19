@@ -2,6 +2,9 @@ class Contact:  # we use the object Contact to store the variable name and numbe
     name = ""
     number = ""
 
+    def __init__(self):
+        pass
+
 
 def menu_choices():  # initiating an instance of menu choices to loop in the cli
     print("1. Add new contact")
