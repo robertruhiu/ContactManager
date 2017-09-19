@@ -16,5 +16,5 @@ gender = input("What is your gender:")
 email_address = input("What is your email address:")
 postal_address = input("What is your postal address:")
 
-newcontact = ContactManager(name, phone_number, gender, email_address, postal_address)
-print(newcontact.contact_info())
+new_contact = ContactManager(name, phone_number, gender, email_address, postal_address)
+print(new_contact.contact_info())
