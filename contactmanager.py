@@ -1,4 +1,4 @@
-class Contact:  # we use the object Contact to store the variable name and number
+class Contact:  # we use the object Contact to store the class attributes name and number
     name = ""
     number = ""
 
