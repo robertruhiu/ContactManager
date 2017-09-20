@@ -23,3 +23,7 @@ class ElectricBrush(ToothBrush):
 
     def turn_off(self):
         self.__is_on=False
+    def brush(self,teeth,time):
+        if not self.__is_on:
+            raise MemoryError("Forgot to turn on toothbrush")
+        super().brush(teeth,time)
