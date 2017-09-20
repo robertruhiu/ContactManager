@@ -1,30 +1,39 @@
-class School :
-    def __init__ ( self , eits, fellows ) :
-        self.eits = eits
-        self.fellows = fellows
-        eits =open("let.txt","r")
-        eits = eits.readlines()
-        print(eits.read())
+class School:
+    def __init__(self,eits,fellows):
+        self.eits=eits
+        self.fellows=fellows
 
 
-class Eit:
-    def __init__ ( self , names , nationalities , fact ) :
-        self.names = names
-        self.nationalities = nationalities
-        self.fact = fact
+class Person:
+    def __init__(self,name=None,nationality=None):
+        name=[]
+        self.name=name
+        nationality=[]
+        self.nationality=nationality
 
-    def recite_fun_facts ( self , fact ) :
+
+class Eit(Person):
+    def __init__(self,name,fact,nationality):
+        super().__init__(name,nationality)
+        self.fact=fact
+        for eit in self.nationality:
+            if nationality in nationality == nationality["Kenya","Nigeria","Ghana","South afica","Ivory coast"]:
+                return None
+            else:
+                raise MemoryError("Country not represented")
+
+    def fun_fact(self,fact):
         return self.fact
 
 
-class Fellow:
-    def __init__ ( self , name , nationality , happiness_level ) :
-        self.name = name
-        self.nationality = nationality
-        self.happiness_level = happiness_level
+class Fellow(Person):
+    def __init__(self,name,nationality,happiness_level):
+        super().__init__(name,nationality)
+        self.happiness_level=happiness_level
 
-    def eat ( self , happiness_level ) :
+    def eat(self,happiness_level):
         return self.happiness_level
 
-    def teach ( self , happiness_level ) :
+
+    def teach(self,happiness_level):
         return self.happiness_level
