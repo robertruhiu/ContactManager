@@ -33,7 +33,7 @@ for k in x:
 TO=k
 SUBJECT='Unwise quotes through smtplib '
 TEXT='Creativity is when a stupid clever soul gets up from bed and does amazing things that makes the world think he is wise.'
-user = 'robertruhiu@gmail.com'
+user = '*******************'
 password = '***********'
 server = smtplib.SMTP('smtp.gmail.com',587)
 server.ehlo()
