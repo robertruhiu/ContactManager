@@ -31,11 +31,10 @@ for k in x:
     print (k)
 
 TO=k
-SUBJECT='send email using smtplib in python'
-TEXT='Here is the message i have sent'
-
-user = 'dennis.ruhiu@meltwater.org'
-password = 'Pokerface1994'
+SUBJECT='Unwise quotes through smtplib '
+TEXT='Creativity is when a stupid clever soul gets up from bed and does amazing things that makes the world think he is wise.'
+user = 'robertruhiu@gmail.com'
+password = '***********'
 server = smtplib.SMTP('smtp.gmail.com',587)
 server.ehlo()
 server.starttls()
@@ -56,24 +55,24 @@ except:
     print('error sending email')
 
 choice = menu_choices()
-#while choice != "3":
-#    if choice == "1":
-#        name = input('Your name: ')
-#        email = input('Your email: ')
-#        file_exist = os.path.exists('contacts.csv')
-#        with open('contacts.csv', 'a') as csv_file:
-#            headers = [ 'name', 'email' ]
-#            writer = csv.DictWriter(csv_file, headers)
-#
-#            if not file_exist:
-#                writer.writeheader()
-#
-#            writer.writerow({ 'name':name, 'email':email })
-#    elif choice == "2":
-#        search_email(name = input("Guest name to be searched:"))
-#    elif choice != ("1", "2"):
-#        print("enter a valid number between 1-2")
+while choice != "3":
+    if choice == "1":
+        name = input('Your name: ')
+        email = input('Your email: ')
+        file_exist = os.path.exists('contacts.csv')
+        with open('contacts.csv', 'a') as csv_file:
+            headers = [ 'name', 'email' ]
+            writer = csv.DictWriter(csv_file, headers)
+
+            if not file_exist:
+                writer.writeheader()
+
+            writer.writerow({ 'name':name, 'email':email })
+    elif choice == "2":
+        search_email(name = input("Guest name to be searched:"))
+    elif choice != ("1", "2"):
+        print("enter a valid number between 1-2")
 
 
-#    print(mydict.values())
-#    choice = menu_choices()
+    print(mydict.values())
+    choice = menu_choices()
